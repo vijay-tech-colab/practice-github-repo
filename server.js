@@ -3,7 +3,9 @@ import userRoutes from "./routes/userRoutes.js";
 
 const app = express();
 const PORT = 3000;
-
+app.use((req, res) => {
+    console.log(req.method , Date.now())
+})
 app.use(express.json()); // Parse JSON body
 app.use("/api/users", userRoutes);
 
