@@ -22,6 +22,14 @@ router.get("/", (req, res) => {
   res.json(users);
 });
 
+
+router.get("/welcome", (req, res) => {
+  res.json({
+    success : true,
+    message : "welcome to our page ?"
+  });
+});
+
 // 📖 READ one
 router.get("/:id", (req, res) => {
   const user = users.find(u => u.id === parseInt(req.params.id));
