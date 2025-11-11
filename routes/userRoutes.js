@@ -4,7 +4,8 @@ const router = express.Router();
 // temporary in-memory data
 let users = [
   { id: 1, name: "Alice", email: "alice@mail.com" },
-  { id: 2, name: "Bob", email: "bob@mail.com" }
+  { id: 2, name: "Bob", email: "bob@mail.com" },
+  { id: 3, name: "Bob", email: "bob@mail.com" }
 ];
 
 // ✅ CREATE
